@@ -1,0 +1,53 @@
+<ion-header>
+</ion-header>
+
+<ion-content padding class="manual-ios-statusbar-padding">
+    <div>
+      <img src="assets/imgs/week.jpg" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+
+	<ion-card [class.card-highlight] = "isToday(1)">
+		<ion-card-header>{{ getCardCaption(0) }}</ion-card-header>
+		<ion-card-content>
+			<p><b>Total: </b> {{ workTimeMonday }} </p>
+			<p><b>Overtime: </b> {{ overTimeMonday }} </p>
+			<p><b>Pause: </b> {{ pauseTimeMonday }} </p>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card [class.card-highlight] = "isToday(2)">
+		<ion-card-header>{{ getCardCaption(1) }}</ion-card-header>
+		<ion-card-content>
+			<p><b>Total: </b> {{ workTimeTuesday}} </p>
+			<p><b>Overtime: </b> {{ overTimeTuesday }} </p>
+			<p><b>Pause: </b> {{ pauseTimeTuesday }} </p>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card [class.card-highlight] = "isToday(3)">
+		<ion-card-header>{{ getCardCaption(2) }}</ion-card-header>
+		<ion-card-content>
+			<p><b>Total: </b> {{ workTimeWednesday }} </p>
+			<p><b>Overtime: </b> {{ overTimeWednesday }} </p>
+			<p><b>Pause: </b> {{ pauseTimeWednesday }} </p>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card [class.card-highlight] = "isToday(4)">
+		<ion-card-header>{{ getCardCaption(3) }}</ion-card-header>
+		<ion-card-content>
+			<p><b>Total: </b> {{ workTimeThursday }} </p>
+			<p><b>Overtime: </b> {{ overTimeThursday }} </p>
+			<p><b>Pause: </b> {{ pauseTimeThursday }} </p>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card [class.card-highlight] = "isToday(5)">
+		<ion-card-header>{{ getCardCaption(4) }}</ion-card-header>
+		<ion-card-content>
+			<p><b>Total: </b> {{ workTimeFriday }} </p>
+			<p><b>Overtime: </b> {{ overTimeFriday }} </p>
+			<p><b>Pause: </b> {{ pauseTimeFriday }} </p>
+		</ion-card-content>
+	</ion-card>
+</ion-content>

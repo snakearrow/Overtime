@@ -1,0 +1,7 @@
+{
+  "name": "Overtime",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

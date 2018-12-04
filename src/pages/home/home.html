@@ -1,0 +1,87 @@
+<ion-header>
+</ion-header>
+
+<ion-content padding class="manual-ios-statusbar-padding">
+    <div>
+      <img src="assets/imgs/today.jpg" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+
+	<ion-grid>
+		<ion-row>
+		<ion-col>
+			<div>
+			<button ion-button (click)="startButtonClicked()" full color="default" icon-start [disabled]="!startButtonEnabled">
+				<ion-icon name='play'></ion-icon>
+				Start
+			</button>
+			</div>
+		</ion-col>
+		<ion-col>
+			<div>
+			<button ion-button (click)="pauseButtonClicked()" full [disabled]="!pauseButtonEnabled" color="secondary" icon-start>
+				<ion-icon name='pause'></ion-icon>
+			Pause
+			</button>
+			</div>
+		</ion-col>
+		<ion-col>
+			<div>
+				<button ion-button (click)="stopButtonClicked()" full [disabled]="!stopButtonEnabled" color="danger" icon-start>
+				<ion-icon name='square'></ion-icon>
+				Stop
+			</button>
+			</div>
+		</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col></ion-col>
+			<ion-col>
+				<div>
+					<button ion-button (click)="sickButtonClicked()" full color="light" icon-start>
+					<ion-icon name='medkit'></ion-icon>
+					Sick
+					</button>
+				</div>
+			</ion-col>
+			<ion-col></ion-col>
+		</ion-row>
+	</ion-grid>
+	<br>
+	<ion-list no-border>
+		<ion-item><ion-icon name='speedometer' item-start></ion-icon>
+		  Start
+		  <ion-note item-end>
+		  {{ startTimeStr }}
+		  </ion-note>
+		</ion-item>
+
+		<ion-item><ion-icon name='cafe' item-start></ion-icon>
+		  Pause
+		  <ion-note item-end>
+		  {{ pauseTimeStr }}
+		  </ion-note>
+		</ion-item>
+
+		<ion-item><ion-icon name='power' item-start></ion-icon>
+		  Stop
+		  <ion-note item-end>
+		  {{ stopTimeStr }}
+		  </ion-note>
+		</ion-item>
+
+		<ion-item><ion-icon name='time' item-start></ion-icon>
+		  Work time
+		  <ion-note item-end>
+		  {{ workTimeStr }}
+		  </ion-note>
+		</ion-item>
+
+		<ion-item><ion-icon name='trophy' item-start></ion-icon>
+		  Overtime
+		  <ion-note item-end>
+		  {{ overTimeStr }}
+		  </ion-note>
+		</ion-item>
+	</ion-list>
+
+</ion-content>
