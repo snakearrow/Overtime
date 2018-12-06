@@ -125,6 +125,8 @@ export class HomePage {
 					if (this.overTime) {
 						ot = ot + this.overTime.getTime()/1000;
 						console.log("new overtime: " + ot);
+						this.settings.totalOverTime = ot;
+						this.storage.set("totalOverTime", ot);
 					}
 					// if not, substract from overtime
 					else {

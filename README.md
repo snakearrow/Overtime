@@ -1,1 +1,1 @@
-Android app written in Angular / ionic that tracks your daily work time.
+Android app written in Angular / ionic that tracks your daily work time

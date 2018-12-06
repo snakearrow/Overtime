@@ -20,7 +20,7 @@
 		<ion-item></ion-item>
 	  	<ion-item>
 			<ion-label>Work time per day</ion-label>
-        	<ion-datetime displayFormat="HH:mm" pickerFormat="hh mm" (ionChange)="totalWorkTimeChanged(totalWorkTimeStr)" [(ngModel)]="totalWorkTimeStr"></ion-datetime>
+        	<ion-datetime displayFormat="HH:mm" pickerFormat="hh mm" minuteValues="0,15,30,45" (ionChange)="totalWorkTimeChanged(totalWorkTimeStr)" [(ngModel)]="totalWorkTimeStr"></ion-datetime>
       	</ion-item>
 
 	  	<ion-item>
