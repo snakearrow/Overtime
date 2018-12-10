@@ -30,8 +30,8 @@ export class AlltimePage {
 	  else {
 		  let seconds = ot % 60;
 		  let minutes = ot / 60 % 60;
-		  let hours = ot / 60 / 60 % 60;
-		  this.totalOverTimeStr = this.padZero(hours) + ":" + this.padZero(minutes) + ":" + this.padZero(seconds);  
+		  let hours = Math.trunc(ot / 60 / 60);
+		  this.totalOverTimeStr = this.padZero(hours) + ":" + this.padZero(minutes) + ":" + this.padZero(seconds);
 	  }
   }
 

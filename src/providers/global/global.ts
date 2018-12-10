@@ -40,7 +40,7 @@ export class GlobalProvider {
 				this.totalOverTime = val;
 			}
 			else {
-				this.storage.set("totalOverTime", 0);
+				this.storage.set("totalOverTime", 220500);
 			}
 		});
 	}
@@ -50,7 +50,7 @@ export class GlobalProvider {
 		this.storage.set("settings.totalWorkTime", this.totalWorkTime);
 		this.storage.set("settings.overTimeOffset", 0);
 		this.storage.set("totalSickDays", 0);
-		this.storage.set("totalOverTime", 0);
+		this.storage.set("totalOverTime", 220500);
 	}
 
 }
